@@ -179,7 +179,7 @@ gulp.task('compress:gzip', 'Compress js files to min.js.gz', function() {
         });
 });
 
-gulp.task('test', 'Run unit tests', function () {
+gulp.task('test', 'Run unit tests', ['bower-install'], function () {
     var options = {
         thresholds : {
             statements : 95,

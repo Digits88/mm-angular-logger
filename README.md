@@ -1,4 +1,4 @@
-[![Build Status](https://secure.travis-ci.org/martinmicunda/employee-scheduling.png)](http://travis-ci.org/martinmicunda/employee-scheduling) [![Dependency Status](https://david-dm.org/martinmicunda/employee-scheduling.png)](https://david-dm.org/martinmicunda/employee-scheduling) [![devDependency Status](https://david-dm.org/martinmicunda/employee-scheduling/dev-status.png)](https://david-dm.org/martinmicunda/employee-scheduling#info=devDependencies) [![Coverage Status](https://coveralls.io/repos/martinmicunda/employee-scheduling/badge.png?branch=master)](https://coveralls.io/r/martinmicunda/employee-scheduling?branch=master)
+[![Build Status](https://secure.travis-ci.org/martinmicunda/mm-angular-logger.png)](http://travis-ci.org/martinmicunda/mm-angular-logger) [![Dependency Status](https://david-dm.org/martinmicunda/mm-angular-logger.png)](https://david-dm.org/martinmicunda/mm-angular-logger) [![devDependency Status](https://david-dm.org/martinmicunda/mm-angular-logger/dev-status.png)](https://david-dm.org/martinmicunda/mm-angular-logger#info=devDependencies) [![Coverage Status](https://coveralls.io/repos/martinmicunda/mm-angular-logger/badge.png?branch=master)](https://coveralls.io/r/martinmicunda/mm-angular-logger?branch=master)
 
  mm-angular-logger
 ===================
@@ -6,7 +6,8 @@
 
 An AngularJS module that provides enhanced support for [`$log`](https://docs.angularjs.org/api/ng/service/$log) service. This module adds more features for [`$log`](https://docs.angularjs.org/api/ng/service/$log) service like a timestamp, hint about where the message was created, turn off all or specific kind of messages (like info() and debug()).
 
-> **Requirements:** AngularJS 1.2+ **File Size:** 2.4Kb minified, 0.5Kb gzipped
+> **Requirements:** AngularJS 1.2+ 
+> **File Size:** 2.4Kb minified, 0.5Kb gzipped
 
 ## Install
 
