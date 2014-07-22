@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MM Angular Logger Demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body ng-app="loggerExample">
+        <div ng-controller="LoggerController">
+            <p>Reload this page with open console and hit the log button...</p>
+            <button ng-click="logger.log('This is a log message!')">log</button>
+            <button ng-click="logger.info('This is an info message!')">info</button>
+            <button ng-click="logger.debug('This is a debug message!')">debug</button>
+            <button ng-click="logger.warn('This is a warn message!')">warn</button>
+            <button ng-click="logger.error('This is an error message!')">error</button>
+            <button ng-click="logger.error('This is an error message with {0}', ['interpolate variable.'])">error with interpolate variable</button>
+        </div>
+
+    <!-- bower:js -->
+    <script src="../bower_components/angular/angular.js"></script>
+    <!-- endbower -->
+    <script type="text/javascript" src="../src/mm-angular-logger.js"></script>
+
+    <script>
+        angular.module('loggerExample', ['mm.logger'])
+            .controller('LoggerController', ['$scope', 'Logger', function($scope, Logger) {
+                $scope.logger = Logger.getLogger('LoggerController');
+            }]);
+    </script>
+
+    <script src="http://localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>
