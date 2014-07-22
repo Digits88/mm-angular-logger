@@ -70,7 +70,8 @@
     "karma-coveralls": "^0.1.4",
     "minimist": "^0.1.0",
     "path": "0.4.9",
-    "open": "0.0.5"
+    "open": "0.0.5",
+    "pre-commit": "0.0.9"
   },
   "licenses": {
     "type": "MIT",
