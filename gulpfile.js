@@ -314,7 +314,8 @@ gulp.task('bump', 'Bump version number in package.json & bower.json', ['jshint']
  */
 gulp.task('changelog', 'Generate changelog', function(callback) {
     changelog({
-        version: pkg.version
+        version: pkg.version,
+        repository: 'https://github.com/martinmicunda/mm-angular-logger'
     }, function(err, log) {
         if (err) {
             gutil.log(COLORS.red('Error: Failed to generate changelog ' + err));
