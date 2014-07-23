@@ -141,7 +141,7 @@ gulp.task('jshint', 'Hint src JavaScripts files', function () {
         .pipe(jshint('.jshintrc'))
         .pipe(jshint.reporter('jshint-stylish'))
         .pipe(gulpif(!isWatching, jshint.reporter('fail')))
-        .pipe(refresh(browser))
+        .pipe(gulpif(isWatching, refresh(browser)))
         .pipe(size());
 });
 
