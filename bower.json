@@ -1,7 +1,7 @@
 {
   "name": "mm-angular-logger",
   "description": "An AngularJS module that provides enhanced support for $log service.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/martinmicunda/mm-angular-logger",
   "author": {
     "name": "Martin Micunda",
