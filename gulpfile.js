@@ -321,8 +321,7 @@ gulp.task('changelog', 'Generate changelog', function(callback) {
             gutil.log(COLORS.red('Error: Failed to generate changelog ' + err));
             return process.exit(1);
         }
-        fs.writeFileSync('CHANGELOG.md', data);
-        callback()
+        fs.writeFileSync('CHANGELOG.md', data, callback());
     });
 });
 
