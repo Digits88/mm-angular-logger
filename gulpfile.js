@@ -275,6 +275,7 @@ gulp.task('test', 'Run unit tests and coverage', ['karma'], function () {
             process.exit(1);
         });
 });
+
 /**
  * The 'build' task gets app ready for deployment by
  * minifying etc.

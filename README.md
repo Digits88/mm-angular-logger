@@ -66,7 +66,7 @@ This logger is also working with exception that have a type of `Error`:
 logger.error(msg, null, exception);
 ```
 ## Developers
-Clone the repo, `git clone git://github.com/martinmicunda/mm-angular-logger.git`, [download the latest release](https://github.com/martinmicunda/mm-angular-logger/zipball/master) or install with bower `bower install mm-angular-logger --save`.
+Clone the repo, `git clone git://github.com/martinmicunda/mm-angular-logger.git`. 
 
 `mm-angular-logger` is tested with `karma` against the latest stable release of AngularJS.
 
@@ -85,10 +85,10 @@ $ gulp serve
 
 ## Release
 
-> During the release process only [`package.json`](package.json), [`bower.json`](bower.json) and [`CHANGELOG.md`](CHANGELOG.md) files should be edited and all steps should be done with **gulp tasks** and **not manually**!
+> During the release process only [`dist`](dist/), [`package.json`](package.json), [`bower.json`](bower.json) and [`CHANGELOG.md`](CHANGELOG.md) files should be edited and all steps should be done with **gulp tasks** and **not manually**!
 
 - To push a new release:
-  1. Update [`package.json`](package.json) version to new version with `gulp bump --type=(major|minor|patch)` 
+  1. Update [`package.json`](package.json) and [`bower.json`](bower.json) version to new version with `gulp bump --type=(major|minor|patch)` 
   2. Generate changelog with `gulp changelog`
   3. Go through the changelog, and fix any mistakes or clarify any unclear commit messages
   4. Commit and push [`package.json`](package.json), [`bower.json`](bower.json) and [`CHANGELOG.md`](CHANGELOG.md) with `gulp release` 
