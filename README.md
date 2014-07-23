@@ -85,13 +85,14 @@ $ gulp serve
 
 ## Release
 
-> During the release process only [`dist`](dist/), [`package.json`](package.json), [`bower.json`](bower.json) and [`CHANGELOG.md`](CHANGELOG.md) files should be edited and all steps should be done with **gulp tasks** and **not manually**!
+> During the release process only [`dist`](dist), [`package.json`](package.json), [`bower.json`](bower.json) and [`CHANGELOG.md`](CHANGELOG.md) files should be edited and all steps should be done with **gulp tasks** and **not manually**!
 
 - To push a new release:
   1. Update [`package.json`](package.json) and [`bower.json`](bower.json) version to new version with `gulp bump --type=(major|minor|patch)` 
-  2. Generate changelog with `gulp changelog`
-  3. Go through the changelog, and fix any mistakes or clarify any unclear commit messages
-  4. Commit and push [`package.json`](package.json), [`bower.json`](bower.json) and [`CHANGELOG.md`](CHANGELOG.md) with `gulp release` 
+  2. Build dist files with `gulp build`
+  3. Generate changelog with `gulp changelog`
+  4. Go through the changelog, and fix any mistakes or clarify any unclear commit messages
+  5. Commit and push [`dist`](dist/), [`package.json`](package.json), [`bower.json`](bower.json) and [`CHANGELOG.md`](CHANGELOG.md) with `gulp release` 
 
 ## Commit Conventions
 Use these [commit conventions](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit) to generate a changelog from git metadata. Some example output can be found [here](https://github.com/driftyco/ionic/blob/master/CHANGELOG.md).

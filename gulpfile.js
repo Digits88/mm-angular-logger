@@ -342,7 +342,7 @@ gulp.task('release', 'Release bumped version number to GitHub repo', ['check'], 
     gutil.log(COLORS.blue('Pushing to GitHub ...'));
     var commitMsg = 'chore(release): v' + pkg.version;
     return gulp.src('package.json')
-        .pipe(exec('git add CHANGELOG.md package.json'))
+        .pipe(exec('git add dist CHANGELOG.md package.json bower.json'))
         .pipe(exec('git commit -m "' + commitMsg + '" --no-verify'))
         .pipe(exec('git push origin master'));
 });
