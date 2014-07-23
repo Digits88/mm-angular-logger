@@ -49,7 +49,8 @@ module.exports = function(config) {
         coverageReporter: {
             reporters: [
                 {type: 'html', dir: '.tmp/test-reports/coverage/'}, // will generate html report
-                {type: 'lcov', dir: '.tmp/test-reports/coverage/'}, // will generate json report file and this report is loaded to make sure failed coverage cause gulp to exit non-zero
+                {type: 'json', dir: '.tmp/test-reports/coverage/'}, // will generate json report file and this report is loaded to make sure failed coverage cause gulp to exit non-zero
+                {type: 'lcov', dir: '.tmp/test-reports/coverage/'}, // will generate Icov report file and this report is published to coveralls
                 {type: 'text-summary', dir: '.tmp/test-reports/coverage/'} // it does not generate any file but it will print coverage to console
             ]
         },
@@ -80,7 +81,7 @@ module.exports = function(config) {
         // - PhantomJS
         // - IE (only Windows)
         // CLI --browsers Chrome,Firefox,Safari
-        browsers: [process.env.TRAVIS ? 'Firefox' : 'PhantomJS'],
+        browsers: [process.env.TRAVIS ? 'Firefox' : 'Chrome'],
 
         // If browser does not capture in given timeout [ms], kill it
         // CLI --capture-timeout 5000

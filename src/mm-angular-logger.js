@@ -64,26 +64,26 @@
      * ```
      *
      * @example
-     <example module="logExample">
-     <file name="script.js">
-     angular.module('loggerExample', [mm.logger])
-     .controller('LoggerController', ['$scope', 'Logger', function($scope, Logger) {
-                        $scope.logger = Logger.getLogger('LoggerController');
-                        $scope.message = 'Hello World!';
-                }]);
-     </file>
-     <file name="index.html">
-     <div ng-controller="LoggerController">
-     <p>Reload this page with open console, enter text and hit the log button...</p>
-     Message:
-     <input type="text" ng-model="message"/>
-     <button ng-click="logger.log(message)">log</button>
-     <button ng-click="logger.warn(message)">warn</button>
-     <button ng-click="logger.info(message)">info</button>
-     <button ng-click="logger.error(message)">error</button>
-     </div>
-     </file>
-     </example>
+         <example module="logExample">
+             <file name="script.js">
+                 angular.module('loggerExample', [mm.logger])
+                 .controller('LoggerController', ['$scope', 'Logger', function($scope, Logger) {
+                                    $scope.logger = Logger.getLogger('LoggerController');
+                                    $scope.message = 'Hello World!';
+                            }]);
+             </file>
+             <file name="index.html">
+                 <div ng-controller="LoggerController">
+                     <p>Reload this page with open console, enter text and hit the log button...</p>
+                     Message:
+                     <input type="text" ng-model="message"/>
+                     <button ng-click="logger.log(message)">log</button>
+                     <button ng-click="logger.warn(message)">warn</button>
+                     <button ng-click="logger.info(message)">info</button>
+                     <button ng-click="logger.error(message)">error</button>
+                 </div>
+             </file>
+         </example>
      */
     function LoggerProvider() {
         /**

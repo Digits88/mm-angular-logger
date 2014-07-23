@@ -11,8 +11,8 @@ notifications:
 
 env:
   global:
-    # travis-encrypt -r martinmicunda/mm-angular-logger -k COVERALLS_REPO_TOKEN -v <https://help.github.com/articles/creating-an-access-token-for-command-line-use> --add env.globa
-#    - secure: YDGbgsTSvN9evJIRhX22Y+P56VYK50bT1tnQrkMxLRANyyQc6UF/e5iKWm+Yy4/0OWq12o+2tTvBc/MgdwSE+t28E+VmdF/JcQDY2pHb8szQ6PjS1PCkeq3IbYvdsYTSAWOBa9coqXECwkwEdtI6tuGQpXL/MOnq7ZncOetdpF4=
+    # travis-encrypt -r martinmicunda/mm-angular-logger COVERALLS_REPO_TOKEN=<value> --add env.global
+    - secure: fNef07HW5rGEjC4njg5cOz7hAX5+S5DhOYLiHrcJqCVXxxn6tSyKxKnCquJqJMjtzOEJdKl258jOLruXbAT4yNsbJ9r2FkiZ54O9M02rx8GvjkYGO9CxFRBeFRQsVb9dop5lGnPmQ6MwsVW11sKw2d7iSg+NhJmM090c7nVl60U=
 
 # starts xvfb on display port :99.0 (virtual display for Firefox)
 before_install:
