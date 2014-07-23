@@ -240,7 +240,7 @@ gulp.task('check', 'Check if there are any changes to commit', function (cb) {
 /**
  * The demo web server.
  */
-gulp.task('serve', 'Run the demo web server', ['watch'], function() {
+gulp.task('serve', 'Run the demo web server', ['bower-install', 'watch'], function() {
     connect.server({
         root: ['./', 'demo'],
         port: DEMO_PORT,
