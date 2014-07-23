@@ -1,6 +1,6 @@
 /**
  * An AngularJS module that provides enhanced support for $log service.
- * @version v0.0.0 - 2014-07-23
+ * @version v0.0.1 - 2014-07-23
  * @link https://github.com/martinmicunda/mm-angular-logger
  * @author Martin Micunda
  * @copyright 2014(c) Martin Micunda
