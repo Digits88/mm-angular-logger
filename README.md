@@ -63,12 +63,14 @@ logger.error('This is a {0} error! {1}', [ 'big', 'Just kidding!' ]);
 This logger is also working with exception that have a type of `Error`:
 
 ```js
-logger.error(msg, null, exception);
+logger.error(msg, null, errorData);
 ```
+> **Hint:** See the example in [mm-angular-exception-handler](https://github.com/martinmicunda/mm-angular-exception-handler/blob/master/src/mm-angular-exception-handler.js#L177) how to log error data.
+
 ## Developers
 Clone the repo, `git clone git://github.com/martinmicunda/mm-angular-logger.git`. 
 
-`mm-angular-logger` is tested with `karma` against the latest stable release of AngularJS.
+The `mm-angular-logger` is tested with `karma` against the latest stable release of AngularJS.
 
 ```bash
 $ npm install
@@ -94,9 +96,6 @@ $ gulp serve
   4. Go through the changelog, and fix any mistakes or clarify any unclear commit messages
   5. Commit and push [`dist`](dist/), [`package.json`](package.json), [`bower.json`](bower.json) and [`CHANGELOG.md`](CHANGELOG.md) with `gulp release` 
 
-## Commit Conventions
-Use these [commit conventions](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit) to generate a changelog from git metadata. Some example output can be found [here](https://github.com/driftyco/ionic/blob/master/CHANGELOG.md).
-
 ## Versioning
 
 Releases will be numbered with the following format:
@@ -112,7 +111,7 @@ And constructed with the following guidelines:
 For more information on SemVer, please visit <http://semver.org/>.
 
 ## Contributing
-Please submit all pull requests the against master branch. If your unit test contains JavaScript patches or features, you should include relevant unit tests. Thanks!
+Please submit all pull requests the against master branch. If your code contains JavaScript patches or features, you should include relevant unit tests. See [CONTRIBUTING.md](CONTRIBUTING.md) file more details. Thanks!
 
 ## License
 
