@@ -111,7 +111,7 @@ And constructed with the following guidelines:
 For more information on SemVer, please visit <http://semver.org/>.
 
 ## Contributing
-Please submit all pull requests the against master branch. If your code contains JavaScript patches or features, you should include relevant unit tests. See [CONTRIBUTING.md](CONTRIBUTING.md) file more details. Thanks!
+Please submit all pull requests the against master branch. If your code contains JavaScript patches or features, you should include relevant unit tests. See [CONTRIBUTING](CONTRIBUTING.md) file more details. Thanks!
 
 ## License
 
