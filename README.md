@@ -1,5 +1,6 @@
 [![Bower version](https://badge.fury.io/bo/mm-angular-logger.svg)](http://badge.fury.io/bo/mm-angular-logger) [![Build Status](https://secure.travis-ci.org/martinmicunda/mm-angular-logger.png)](http://travis-ci.org/martinmicunda/mm-angular-logger) [![Coverage Status](https://coveralls.io/repos/martinmicunda/mm-angular-logger/badge.png?branch=master)](https://coveralls.io/r/martinmicunda/mm-angular-logger?branch=master)
 
+mm-angular-logger
 ===================
 ![Screenshot](screenshot.png)
 
